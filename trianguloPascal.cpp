@@ -10,18 +10,18 @@ int main()
 {
     int numero;
     
-    cout<<"Ingrese la potencia: ";
-    cin>>numero;
+    cout << "Ingrese la potencia: ";
+    cin >> numero;
     
     int x = numero * 2;
     
     for(int i = 0; i <= numero; ++i, x -= 2){
         for(int s = 0; s <= x; s++)
-            cout<<" ";
+            cout << " ";
         for(int k = 0; k <= i; ++k){
-            cout<<setw(4)<<formula(i, k);
+            cout << setw(4) << formula(i, k);   // setw(4) imprimira 4 caracteres
         }
-        cout<<endl;
+        cout << endl;
     }
     cin.get();
     cin.get();
