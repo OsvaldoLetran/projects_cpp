@@ -3,7 +3,7 @@
 para compilar y ejecutar un archivo C y C++
 
 ```sh
-gcc myApp -o myApp.c
+gcc myApp.c -o myApp
 g++ myApp.cpp -o myApp
 ./myApp
 ```
