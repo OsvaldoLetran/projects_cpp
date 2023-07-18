@@ -5,11 +5,11 @@ void reverse(char [], int, int);
 
 int main()
 {
-    char string1[60]; //Cadena de caracteres de 60
+    char string1[60]; //String of 60 characters
     int size;
 
-    printf("Tyoe a cool sentence: \n");
-    fgets(string1, 60, stdin);    // es un scanf pero para strings
+    printf("Type a cool sentence: \n");
+    fgets(string1, 60, stdin);    // fgets reads text lines from stdin
     size = strlen(string1);
 
     reverse(string1, 0, size - 1); // string reverse
