@@ -1,15 +1,15 @@
 #include <iostream>  // "iostream" me permite sacar texto y numeros por el terminal.
 #include <cmath>     // "cmath" es una colección de funciones matemáticas que necesito.
-#include <fstream>
+#include <fstream>   // "fstream" definr varias clases que admiten op. de iostream.
 
 using namespace std;  // A efectos práticos, esto es para no tener que poner "std" todo el rato.
 
 int main(){
     double N = 1234;         // NÚMERO DE TÉRMINOS A SUMAR. ¡CAMBIAD ESTO!
 
-    cout << "Número de términos que quierer sumar: " << N << endl;
+    cout << "Número de dardos que quieres lanzar: " << N << endl;
 
-    double S=0;  // Defino la suma total de los términos y la inicializo a 0.
+    double S = 0;  // Defino la suma total de los términos y la inicializo a 0.
 
     for (int i = 0; i < N; i++) {  // Bucle, recorre todo los naturales hasta N.
         S = S + 1/pow(i + 1, 2);     // En cada vuelta se añade a S el siguiente término.
